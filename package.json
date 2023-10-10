@@ -1,0 +1,26 @@
+{
+  "name": "student-tg-bot",
+  "version": "1.0",
+  "description": "Telegram Bot using Telegraf Framework",
+  "main": "index.js",
+  "repository": "https://github.com/artieam/student-tg-bot",
+  "author": "Sorokin Artem",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack -c webpack.config.js",
+    "dev-bot": "node bot.js"
+  },
+  "dependencies": {
+    "@cfworker/web": "^1.12.4",
+    "cfworker-middleware-telegraf": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.9",
+    "telegraf": "^4.9.1"
+  },
+  "devDependencies": {
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
